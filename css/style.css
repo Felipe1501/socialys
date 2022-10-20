@@ -7,13 +7,16 @@
     font-family: 'Lato', sans-serif;
 }
 
+
+
 .header h4{
-text-align: center;
-font-size: 2vw;
-color: #9F37DF;
+    text-align: center;
+    font-size: 2vw;
+    color: #9F37DF;
 }
 
 .imgLogo{
+    color: #ffffff;
     margin-top: 2%;
     margin-left: 40%;
     width: 20vw;
