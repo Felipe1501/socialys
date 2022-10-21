@@ -17,7 +17,7 @@ footer{
     padding: 30px;
     text-align: center;
     flex-shrink: 0;
-    height: 300px;
+ 
     
 }
 
@@ -30,6 +30,7 @@ header > hr{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 755px;
 }
 
 .main-left {
@@ -43,7 +44,7 @@ header > hr{
     color: #3C096C;
 }
 
-input{
+a > input{
     padding: 12px 0px;
     margin: 25px;
     border-radius: 5px;
@@ -51,14 +52,14 @@ input{
     font-weight: 800;
 }
 
-.main-left > input {
+.main-left > a > input {
     width: 80%;
     border-color: #230336;
     background: #7B2CBF;
     color: #E0AAFF;
 }
 
-.main-left > input:hover{
+.main-left > a > input:hover{
     border-color: #7B2CBF;
     background: #E0AAFF;
     color: #7B2CBF;
@@ -75,14 +76,14 @@ input{
     color: #1d127c;
 }
 
-.btnCad > input {
+.btnCad > a > input {
     width: 50%;
     border-color: #7B2CBF;
     background: #fff;
     color: #7B2CBF;
 }
 
-.btnCad > input:hover {
+.btnCad > a > input:hover {
     width: 50%;
     border-color: #1d0d25;
     background: #1d127c;
@@ -90,9 +91,7 @@ input{
     transition: all 0.3s ease;
 }
 
-.main-right {
-    
-}
+
 
 .imgLogo{
     width: 294px;
