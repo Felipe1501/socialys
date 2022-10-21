@@ -143,6 +143,13 @@ h5 > a{
 
 }
 
+.btn-loginCAD:hover{
+    color: #ffffff;
+    background: #9F37DF;
+    border-color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
 @media only screen and (max-width: 950px){
     .card-login{
         width: 85%;

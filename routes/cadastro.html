@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CADASTRO CLIENTE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+   
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.imgLogo{
+    color: #ffffff;
+    margin-top: 2%;
+    margin-left: 40%;
+    width: 20vw;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    margin-left: 10%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.form-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.form-img img {
+    width: 31rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button button {
+    border: none;
+    background-color: #639aff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #6394fff1;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: #340a5c;
+    color: #fff;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #340a5c;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    
+}
+
+.input-box input,
+select {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border-color: #000000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #639aff;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+button.btnVoltar{
+    background-color: #fff;
+    border-color:#9F37DF;
+    color: #9F37DF;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #240046;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #340a5c;
+    transition: all 0.2 ease;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+
+
+        @media screen and (max-width: 1337px) {
+    .form-img {
+        display: none;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+
+    .gender-group{
+        flex-direction: column;
+    }
+
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="/imgs/logo.png" alt="logo" class="imgLogo">
+    </div>
+    <div class="container">
+
+        <div class="form">
+            <form action="#" method="POST">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>CADASTRO</h1>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname"> NOME</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="tel">CELULAR</label>
+                        <input type="text" id="tel" name="tel" placeholder="(xx) xxxx-xxxx" oninput="mascara(this, 'tel')" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="Digite seu cpf" onblur="TestaCPF(this.value);" required/>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="rg">RG</label>
+                        <input type="text" id="rg" name="rg" placeholder="Digite seu rg" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" name="cep" placeholder="Digite seu cep" oninput="mascara(this, 'cep')" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="endereco">ENDEREÇO</label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereco" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">NÚMERO</label>
+                        <input type="number" id="numeroEndereo" name="numeroEndereo" placeholder="Digite o número"  required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="password">SENHA</label>
+                        <input type="password" id="password" name="password" placeholder="Digite sua Senha" required>
+                    </div>
+
+ 
+                    <div class="input-box">
+                        <label for="Confirmepassword">CONFIRME SUA SENHA</label>
+                        <input type="password" id="Confirmepassword" name="Confirmepassword" placeholder="Digite sua Senha" required>
+                    </div>
+
+                </div>
+
+                    
+
+                <div class="continue-button">
+                    <button ><a href="#">CADASTRAR</a></button>
+                    <button class="btnVoltar"><a href="#">VOLTAR</a></button>
+                </div>
+            </form>
+        </div>
+        <div class="form-img">
+            <img src="/imgs/imgWOMAN.svg" >
+        </div>
+    </div>
+    <script src="../index.js"></script>
+</body>
+</html>
